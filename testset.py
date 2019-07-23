@@ -1,14 +1,19 @@
 import inspect 
 
-def Tommy():
+class Tommy():
 	pass
 
-def squareit(x):
+def squareit(self, x):
 	return x * x
 
 funcptr = squareit
 
 setattr(Tommy, 'funcvar', funcptr)
 
-for member in inspect.getmembers('Tommy'):
+for member in inspect.getmembers(Tommy):
 	print member
+
+x = Tommy()
+
+print x.funcvar(21)
+
