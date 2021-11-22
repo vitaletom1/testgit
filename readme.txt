@@ -4,3 +4,5 @@ I want to see how merging works.
 This is my first testgit file	
 
 This is my second testgit line in this testgit file
+
+This is the first message in my new "TommyVee" branch.
